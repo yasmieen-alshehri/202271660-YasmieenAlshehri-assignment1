@@ -1,49 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yasmeen Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <!-- Navbar -->
+  <header class="header">
+    <nav class="nav container">
+      <a class="brand" href="#home">Yasmeen <span>Portfolio</span></a>
 
-  <h1>My Portfolio</h1>
-  <p>A simple personal portfolio website.</p>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-  <section id="about">
+      <button id="themeBtn" class="icon-btn" type="button" aria-label="Toggle theme">
+        🌙
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main id="home" class="hero container">
+    <p class="hero-mini">Hello 👋</p>
+    <h1 class="hero-title">
+      Hi, I'm <span>Yasmeen</span> Alshehri
+    </h1>
+    <p class="hero-sub">
+      Software Engineering student interested in building responsive, user-friendly web experiences.
+    </p>
+
+    <a class="cta" href="#projects">View My Work</a>
+
+    <div class="scroll-hint">
+      <p>Scroll</p>
+      <span>↓</span>
+    </div>
+  </main>
+
+  <!-- Sections -->
+  <section id="about" class="section container">
     <h2>About Me</h2>
     <p>
-      I am a software engineering student interested in web development.
-      This portfolio is a starting point to showcase my work.
+      I’m a software engineering student who enjoys learning web development and creating clean interfaces.
+      This portfolio is my starting point to showcase my work.
     </p>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-
-    <div>
-      <h3>Project 1</h3>
-      <p>Short description of the first project.</p>
-    </div>
-
-    <div>
-      <h3>Project 2</h3>
-      <p>Short description of the second project.</p>
+  <section id="skills" class="section container">
+    <h2>Skills</h2>
+    <div class="chips">
+      <span class="chip">HTML</span>
+      <span class="chip">CSS</span>
+      <span class="chip">JavaScript</span>
+      <span class="chip">Responsive Design</span>
+      <span class="chip">Git/GitHub</span>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="projects" class="section container">
+    <h2>Projects</h2>
+
+    <div class="cards">
+      <article class="card">
+        <h3>Project 1</h3>
+        <p>Short description of the first project.</p>
+        <div class="placeholder">Project Image</div>
+      </article>
+
+      <article class="card">
+        <h3>Project 2</h3>
+        <p>Short description of the second project.</p>
+        <div class="placeholder">Project Image</div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="section container">
     <h2>Contact</h2>
 
-    <form>
-      <input type="text" placeholder="Name">
-      <input type="email" placeholder="Email">
-      <textarea placeholder="Message"></textarea>
-      <button type="submit">Send</button>
+    <form id="contactForm" class="form">
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Message" required></textarea>
+      <button class="cta" type="submit">Send</button>
     </form>
   </section>
 
-  <script src="js/script.js"></script>
+  <footer class="footer container">
+    <p>© 2026 Yasmeen Alshehri</p>
+  </footer>
 
+  <script src="js/script.js"></script>
 </body>
 </html>
