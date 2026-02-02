@@ -201,7 +201,16 @@ body {
   padding: 8px;        
 }
 
+.activity-card ul {
+  margin-top: 10px;
+  padding-left: 18px;
+  color: var(--muted);
+}
 
+.activity-card li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
 
 
 .activity h3 {
@@ -216,6 +225,109 @@ body {
 
 .activity li {
   margin-bottom: 6px;
+}
+/* Contact layout */
+.contact-head{
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.contact-title{
+  font-size: 42px;
+  font-weight: 900;
+}
+
+.contact-title span{
+  color: var(--secondary);
+}
+
+.contact-sub{
+  margin-top: 8px;
+  color: var(--muted);
+}
+
+/* two-column grid */
+.contact-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+/* cards spacing */
+.contact-info,
+.contact-form{
+  padding: 26px;
+}
+
+.contact-info h3,
+.contact-form h3{
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+/* info items */
+.info-list{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.info-item{
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 14px;
+  align-items: center;
+}
+
+.info-icon{
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  background: rgba(199,163,201,0.25);
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border);
+}
+
+.info-label{
+  font-weight: 700;
+}
+
+.info-value{
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.info-value:hover{
+  color: var(--text);
+}
+
+/* form tweaks */
+.contact-form label{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-form span{
+  font-weight: 700;
+}
+
+.contact-btn{
+  width: 100%;
+  margin-top: 6px;
+  border-radius: 999px;
+}
+
+/* responsive */
+@media (max-width: 900px){
+  .contact-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+.info-icon svg{
+  color: var(--primary);
 }
 
 
