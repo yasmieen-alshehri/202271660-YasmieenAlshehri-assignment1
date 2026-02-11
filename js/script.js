@@ -1,4 +1,5 @@
 // Theme toggle
+
 const themeBtn = document.getElementById("themeBtn");
 
 function setTheme(theme) {
@@ -16,6 +17,7 @@ themeBtn.addEventListener("click", () => {
 });
 
 // Form interaction (no backend)
+
 const form = document.getElementById("contactForm");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
