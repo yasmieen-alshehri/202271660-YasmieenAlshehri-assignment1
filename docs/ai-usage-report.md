@@ -29,7 +29,7 @@
 - Learned how to identify and remove unused code to keep the project clean and organized.
 - Discovered new UI techniques such as adding icons and smooth animations to enhance user experience.
 - Learned how to properly test and verify that a design is responsive across different screen sizes using browser DevTools.
-- Learned how to write clear technical documentation and organize project reports properly.
+- Learned how to write clear technical documentation,README file and organize project reports properly.
 
 ## Responsible Use
 - I reviewed all AI-generated suggestions.
