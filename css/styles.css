@@ -1,13 +1,16 @@
+/* ===== Theme ===== */
+
 :root{
   --bg: #f4e6ee;       
   --card: #ffffff;    
-  --primary: #c7a3c9; 
+  --primary: #c7a3c9;
+  --secondary: #8d6cb1;
   --accent: #e7bfd6;   
   --text: #2a2a2a;     
   --muted: #6b6b6b;    
   --border: #e2cfe0;   
+
 }
-  
 
 [data-theme="dark"] {
   --bg: #0f0a1a;        
@@ -19,6 +22,7 @@
   --border: #2a1f3d;    
 }
 
+/* ===== Base ===== */
 
 *{ box-sizing: border-box; margin:0; padding:0; }
 html{ scroll-behavior: smooth; }
@@ -33,6 +37,9 @@ body {
   width: min(1100px, 92vw);
   margin: 0 auto;
 }
+
+
+/* ===== Navbar ===== */
 
 .header {
   background-color: var(--card);
@@ -56,6 +63,7 @@ body {
   text-decoration: none;
   color: var(--text);
 }
+
 .brand span{ color: var(--primary); }
 
 .nav-links{
@@ -63,12 +71,14 @@ body {
   display:flex;
   gap: 16px;
 }
+
 .nav-links a{
   text-decoration:none;
   color: var(--muted);
   padding: 8px 10px;
   border-radius: 10px;
 }
+
 .nav-links a:hover{
   background: rgba(59,130,246,0.10);
   color: var(--text);
@@ -81,6 +91,8 @@ body {
   border-radius: 12px;
   cursor: pointer;
 }
+
+/* ===== Hero ===== */
 
 .hero{
   min-height: 85vh;
@@ -104,11 +116,33 @@ body {
   color: var(--secondary); 
 }
 
-
 .hero-sub{
   color: var(--muted);
+  font-size: 18.5px;
+  line-height: 1.8;
   max-width: 720px;
 }
+
+#about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 22px;
+  line-height: 1.9;
+  max-width: 760px;
+  text-align: center;
+}
+
+#about {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .cta {
   background-color: var(--primary);
@@ -126,16 +160,7 @@ body {
   box-shadow: 0 6px 14px rgba(0,0,0,0.12);
 }
 
-
-
-.scroll-hint{
-  margin-top: 40px;
-  color: var(--muted);
-  display:flex;
-  flex-direction: column;
-  align-items:center;
-  gap: 4px;
-}
+/* ===== Sections ===== */
 
 .section{
   padding: 60px 0;
@@ -153,8 +178,10 @@ body {
   border-radius: 999px;
   background-color: var(--primary);
   color: var(--text);
-}
 
+  position: relative;
+  top: -4px;   
+}
 
 .chips{
   display:flex;
@@ -176,13 +203,14 @@ body {
   margin-top: 14px;
 }
 
-
 .card {
   background-color: var(--card);
   border: 2px solid var(--border);
   border-radius: 10px;
   padding: 20px;
 }
+
+/* ===== Projects ===== */
 
 .project-images {
   display: grid;
@@ -195,11 +223,36 @@ body {
   width: 100%;
   height: 280px;        
   object-fit: contain;  
-  background: #fff;     
+  background: var(--card);     
   border-radius: 10px;
   border: 1px solid var(--border);
   padding: 8px;        
 }
+
+#projects .card h3{
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px; 
+  line-height: 1.25;
+}
+
+#projects .card p{
+  font-size: 18px;
+  line-height: 1.8;
+  margin-top: 6px;
+  color: var(--muted);
+}
+
+/* ===== Activities ===== */
+
+#activities .card h3 {
+  font-size: 24px;   
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 1.25;
+}
+
+
 
 .activity-card ul {
   margin-top: 10px;
@@ -210,23 +263,11 @@ body {
 .activity-card li {
   margin-bottom: 8px;
   line-height: 1.6;
-}
-
-
-.activity h3 {
-  margin-bottom: 8px;
   font-size: 18px;
 }
 
-.activity ul {
-  margin-left: 18px;
-  color: var(--muted);
-}
-
-.activity li {
-  margin-bottom: 6px;
-}
 /* Contact layout */
+
 .contact-head{
   text-align: center;
   margin-bottom: 28px;
@@ -253,7 +294,6 @@ body {
   gap: 18px;
 }
 
-/* cards spacing */
 .contact-info,
 .contact-form{
   padding: 26px;
@@ -265,7 +305,6 @@ body {
   margin-bottom: 18px;
 }
 
-/* info items */
 .info-list{
   display: flex;
   flex-direction: column;
@@ -302,7 +341,6 @@ body {
   color: var(--text);
 }
 
-/* form tweaks */
 .contact-form label{
   display: flex;
   flex-direction: column;
@@ -346,6 +384,8 @@ input, textarea{
 }
 textarea{ min-height: 120px; }
 
+/* ===== Footer ===== */
+
 .footer{
   padding: 22px 0;
   color: var(--muted);
@@ -353,6 +393,7 @@ textarea{ min-height: 120px; }
 }
 
 /* Responsive */
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -366,4 +407,16 @@ textarea{ min-height: 120px; }
     grid-template-columns: 1fr;
   }
 }
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
