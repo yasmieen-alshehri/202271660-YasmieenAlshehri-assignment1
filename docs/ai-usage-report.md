@@ -10,6 +10,7 @@
 - Suggested adding UI improvements like icons in the contact section.
 - Helped identify and remove unused CSS and improve typography.
 - Assisted in debugging styling conflicts and resolving specificity issues.
+- Assisted in refining and organizing project documentation.
 
 ## Benefits
 - Faster development process.
@@ -28,7 +29,7 @@
 - Learned how to identify and remove unused code to keep the project clean and organized.
 - Discovered new UI techniques such as adding icons and smooth animations to enhance user experience.
 - Learned how to properly test and verify that a design is responsive across different screen sizes using browser DevTools.
-
+- Learned how to write clear technical documentation and organize project reports properly.
 
 ## Responsible Use
 - I reviewed all AI-generated suggestions.
