@@ -21,23 +21,26 @@ It serves as the foundation for my professional portfolio.
 - CSS3 (Flexbox, Grid, Media Queries, CSS Variables)
 - JavaScript (Theme toggle, animations, form interaction)
 
----
-
 ## Project Structure
 
+```
 assignment-1/
 │
 ├── index.html
-├── css/styles.css
-├── js/script.js
-├── assets/images/
+├── css/
+│   └── styles.css
+├── js/
+│   └── script.js
+├── assets/
+│   └── images/
 ├── docs/
-│ ├── ai-usage-report.md
-│ └── technical-documentation.md
-├── README.md
-
+│   ├── ai-usage-report.md
+│   └── technical-documentation.md
+└── README.md
+```
 
 ---
+
 
 ## How to Run the Project
 
